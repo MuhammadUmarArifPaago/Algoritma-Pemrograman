@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 26 23:09:17 2021
+
+@author: LENOVO
+"""
+"""
+@Judul: Latihan kedua
+@Hari/Tanggal: Minggu, 20210926
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+print("Hitunglah Luas Ruangan")
+
+
+a= int(input("Masukan Panjang Ruangan="))
+b= int(input("Masukan Lebar Ruangan="))
+c= (input("Masukan Satuan (meter/inci)="))
+penjumlahan = a*b
+print("hasil penjumlahan panjang kali lebar ruangan tersebut adalah= ",penjumlahan,'',c)
+
