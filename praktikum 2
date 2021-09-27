@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Sep 27 13:49:45 2021
+
+@author: LENOVO
+"""
+
+"""
+@praktikum ke 2
+@Judul: Latihan Pertama
+@Hari/Tanggal: Senin, 20210927
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+a= int(input("Masukan Nilai a ="))
+b= int(input("Masukan Nilai b ="))
+
+import math
+
+tambah = a+b 
+selisih = a-b 
+hasilkali = a*b 
+sisapembagian = a%b 
+pembagian = a/b 
+pangkat = a**b 
+
+print( "jumlah a ditambah b adalah" ,tambah )
+print( "selisih antara a dengan b adalah" ,selisih )
+print( "jumlah a dikali b adalah", hasilkali )
+print( "jumlah sisa pembagian a dibagi b adalah", sisapembagian )
+print( "jumlah a dibagi b adalah",  pembagian )
+print( "hasil dari log(a) adalah",  math.log(a) )
+print( "hasil a pangkat b adalah", pangkat )
