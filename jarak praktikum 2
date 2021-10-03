@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct  3 23:40:42 2021
+
+@author: LENOVO
+"""
+
+"""
+@praktikum ke 2
+@Judul: latihan Kedua
+@Hari/Tanggal: Senin, 20211003
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+import math
+
+La1 = float(input(" masukan lattitude kota pertama: "))
+Lo1 = float(input(" masukan longitude kota pertama: "))
+La2 = float(input(" masukan lattitude kota kedua: "))
+Lo2 = float(input(" masukan longitude kota kedua: "))
+
+L1 = La1 * math.pi/180
+L2 = La2 * math.pi/180
+
+
+lat = (La2-La1) * math.pi/180
+lon = (Lo2-Lo1) * math.pi/180
+
+R = 6371
+a = math.sin(lat/2)**2 + math.cos(L1) * math.cos(L2) * math.sin(lon/2)**2
+c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+d = R * c
+
+print( " jarak antara dua titik kota adalah",d,"kilometer" )
