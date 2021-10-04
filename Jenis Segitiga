@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  4 13:52:20 2021
+
+@author: LENOVO
+"""
+
+"""
+@praktikum ke 3
+@Judul: latihan Pertama
+@Hari/Tanggal: Senin, 20211004
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+print("Menentukan jenis segitiga")
+
+A=eval(input("Masukkan sisi A: "))
+B=eval(input("Masukkan sisi B: "))
+C=eval(input("Masukkan sisi C: "))
+
+if(A==B==C):
+    print(" Merupakan segitiga sama sisi ")
+elif((A+B<=C) or (A+C<=B) or (B+C<=A)):
+    print(" Merupakan bukan segitiga ")
+elif(A==B or A==C or B==C):
+    print(" Merupakan segitiga sama kaki ")
+else:
+    print(" Merupakan segitiga sembarang ")
