@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Oct  9 23:45:31 2021
+
+@author: LENOVO
+"""
+
+"""
+@praktikum ke 3
+@Judul: latihan Kedua
+@Hari/Tanggal: Sabtu, 20211009
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+import math 
+
+print("Dengan persamaan kuadrat ax^2 + bx + c = 0")
+a= int(input("Masukan nilai a = "))
+b= int(input("Masukan nilai b = "))
+c= int(input("Masukan nilai c = "))
+
+
+if a == 0 :
+  print("Bukan merupakan persamaan kuadrat")
+
+D = b**2 - 4*a*c
+if D<0:
+ print("Merupakan akar imaginer") 
+elif D>0:
+ x1 = (-b+math.sqrt(D))/(2*a) 
+ x2 = (-b-math.sqrt(D))/(2*a) 
+ print("Merupakan akar yang berbeda")
+elif D == 0:
+ x1 = (-b/(2*a) )
+ x2 = (-b/(2*a) )
+ print("Merupakan akar kembar")
+
+print('Dengan diskriminan :' , D )    
+print('Persamaan kuadratnya adalah' +str(x1)+ 'dan' +str(x2))
