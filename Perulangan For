@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 11 14:08:04 2021
+
+@author: LENOVO
+"""
+"""
+@praktikum ke 4
+@Judul: latihan Pertama
+@Hari/Tanggal: Senin, 20211011
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+
+n = int(input ("Masukkan angka: "))
+
+for i in range(n):
+    for j in range(1, n+1):
+        print(n, end='')
+        
+    print()
+    n-=1
+
