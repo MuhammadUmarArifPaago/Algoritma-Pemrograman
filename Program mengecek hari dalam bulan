@@ -1,0 +1,97 @@
+
+@author: LENOVO
+"""
+
+"""
+@praktikum ke 4
+@Judul: latihan kedua
+@Hari/Tanggal: minggu, 20211017
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+
+print('Program ini akan memberitahu jumlah hari dalam bulan yang di inginkan')
+print ('jika hasi 0 maka bulan salah')
+
+bulan =int(input("masukkan bulan 1-12:"))
+tahun =int(input("masukkan tahun:"))
+if(bulan == 1):
+    hari =31
+elif(bulan==2):
+    if((tahun % 4 == 0 and tahun % 100 != 0)or tahun % 400 == 0):
+        hari = 29
+    else:
+        hari = 28
+elif(bulan == 3):
+    hari = 31
+elif(bulan == 4):
+    hari = 30
+elif(bulan == 5):
+    hari = 31
+elif(bulan == 6):
+    hari = 30
+elif(bulan == 7):
+    hari = 31
+elif(bulan == 8):
+    hari = 31
+elif(bulan == 9):
+    hari = 30
+elif(bulan == 10):
+     hari = 31 
+elif(bulan == 11):
+    hari = 30
+elif(bulan == 12):
+    hari = 31
+else:
+    hari = 0
+    
+print("ada", hari, "hari", "dalam bulan tersebut")
+print('ketik -1 untuk berhenti')
+
+jawab = 'ya'
+hitung = 0
+
+while(True):
+    hitung += 1
+    jawab = input ("ingin mengulangi ?")
+    if jawab == '-1':
+        break
+    else:
+        print('Program ini akan memberitahu jumlah hari dalam bulan yang di inginkan')
+        print ('jika hasi 0 maka bulan salah')
+
+    bulan =int(input("masukkan bulan 1-12:"))
+    tahun =int(input("masukkan tahun:"))
+    if(bulan == 1):
+        hari =31
+    elif(bulan==2):
+        if((tahun % 4 == 0 and tahun % 100 != 0)or tahun % 400 == 0):
+            hari = 29
+        else:
+            hari = 28
+    elif(bulan == 3):
+        hari = 31
+    elif(bulan == 4):
+        hari = 30
+    elif(bulan == 5):
+        hari = 31
+    elif(bulan == 6):
+        hari = 30
+    elif(bulan == 7):
+        hari = 31
+    elif(bulan == 8):
+        hari = 31
+    elif(bulan == 9):
+        hari = 30
+    elif(bulan == 10):
+         hari = 31 
+    elif(bulan == 11):
+        hari = 30
+    elif(bulan == 12):
+        hari = 31
+    else:
+        hari = 0
+        
+    print("ada", hari, "hari", "dalam bulan tersebut")
+    print('ketik -1 untuk berhenti')
