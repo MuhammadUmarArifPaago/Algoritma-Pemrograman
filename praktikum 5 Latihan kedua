@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 25 01:31:22 2021
+
+@author: LENOVO
+"""
+"""
+@praktikum ke 5
+@Judul: latihan kedua
+@Hari/Tanggal: Senin, 20211025
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+Umur = "0"
+Total = 0
+
+
+while (Umur != ""):
+    Umur = input("Masukkan Umur: ")
+    if Umur != '':
+        Umur = int(Umur)
+        if Umur <= 2:
+            print("Gratis")
+            price = 0
+        elif Umur >= 3 and Umur <= 12:
+            print("Harga = $14.00")
+            price = 14
+        elif Umur >= 65:
+            print("Harga = $18.00")
+            price = 18
+        else:
+            print("Harga = $23.00")
+            price = 23  
+        Total = Total + price
+        print("Running Total: %.2f " % Total)
+
+Jumlah = int(input("masukkan Jumlah Uang: "))
+Hasil = Jumlah - Total
+print("Running Kembalian: %.2f " % Hasil)
