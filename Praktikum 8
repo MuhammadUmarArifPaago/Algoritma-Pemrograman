@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  8 18:27:59 2021
+
+@author: LENOVO
+"""
+"""
+@praktikum ke 4
+@Judul: latihan kedua
+@Hari/Tanggal: minggu, 20211017
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+bilangan = ''
+pembagi = ''
+
+def Pembagi_Prima(pembagi):
+    pembagi = 2
+    return pembagi
+
+def Bilangan_Prima(bilangan):
+    bilangan = input ("masukkan bilangan: ")
+    bilangan = int(bilangan)
+    pembagi = 2
+    while bilangan % pembagi != 0: 
+          pembagi = pembagi +1    
+    if pembagi == bilangan:
+         print("bilangan",bilangan, "adalah bilangan prima")  
+    else:
+        print("bilangan",bilangan,  "bukan bilangan prima")
+    
+
+Bilangan_Prima(bilangan)
