@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 15 15:27:48 2021
+
+@author: LENOVO
+"""
+
+"""
+@praktikum ke 9
+@Judul: latihan pertama
+@Hari/Tanggal: Senin, 20211115
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+
+
+b = []
+z = 0
+
+x = int(input("Masukkan Jumlah:"))
+
+def jumlah(x):
+    if x == 0:
+        return (x) 
+    
+for i in range(x):
+    y = int(input("Masukkan angka:"))  
+    b.append(y)
+    z = z + y      
+print("jumlahnya adalah", z)
+jumlah(x)
