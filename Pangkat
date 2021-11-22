@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 22 11:10:01 2021
+
+@author: LENOVO
+"""
+
+"""
+@Judul: Latihan Kedua
+@Hari/Tanggal: Senin, 20211122
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+x = int(input("Masukkan Angka:"))
+y = int(input("Masukkan Pangkat:"))
+def pangkat(x,y):
+    if y==0:
+        return 1
+    else:
+        return x*pangkat(x,y - 1)
+print ("Hasilnya adalah:", pangkat(x,y))
