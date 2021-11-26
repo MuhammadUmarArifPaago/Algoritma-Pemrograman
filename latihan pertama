@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 26 09:31:20 2021
+
+@author: LENOVO
+"""
+
+"""
+@Judul: Latihan Pertama
+@Hari/Tanggal: Jumat, 20211126
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+def write(data):
+   file = open("Biodata.txt", "w")
+   file.write(data)
+   file.close()
+ 
+def read():
+   file = open("Biodata.txt", "r")
+   text = file.read()
+   print (text)
+   file.close()
+   
+a = input("Masukkan Nama Mu: ")
+b = input("Masukkan Umur Mu: ")
+c = input("Masukkan Alamatmu: ")
+d = input("Masukkan Emailmu: ")
+e = input("Masukkan Dosen Walimu: ")
+data = "Nama: {}\nUmur: {}\nAlamat: {}\nEmail {}\nDosen Wali: {}\n".format(a,b,c,d,e)
+write(data)
+read()
