@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 29 15:19:15 2021
+
+@author: LENOVO
+"""
+
+"""
+@Judul: Latihan Pertama
+@Hari/Tanggal: Senin, 20211129
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+
+print("Program akan mengurutkan dan menemukan index dari [87, 56, 34, 23, 89, 15, 2, 200, 28, 31] ")
+
+def bubblesort(arr):
+    for y in range(len(arr)-1,0,-1):
+        for i in range(y):
+            if arr[i]>arr[i+1]:
+                temp = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i + 1] = temp
+
+arr = [87, 56, 34, 23, 89, 15, 2, 200, 28, 31]
+bubblesort(arr)
+
+def binarySearch(arr, l, r, x): 
+	while l <= r: 
+		mid = (r+l)//2;
+		if arr[mid] == x: 
+			return mid
+		elif arr[mid] < x: 
+			l = mid + 1
+		else: 
+			r = mid - 1
+	return - 1
+arr = arr
+x = int(input("Masukan nomor:"))
+result = binarySearch(arr, 0, len(arr)-1, x) 
+
+print("Sesudah di Sorting: ", arr)
+
+if result != -1: 
+	print ("Element ditemukan pada index %d" % result) 
+else: 
+	print ("Element tidak ditemukan pada list")
