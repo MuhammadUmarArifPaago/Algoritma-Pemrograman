@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  6 14:02:56 2021
+
+@author: LENOVO
+"""
+"""
+@Judul: Latihan Pertama
+@Hari/Tanggal: Senin, 20211206
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+
+a = input("masukkan namamu:")
+b = input("masukkan nim kamu:")
+c = input("masukkan tahun angkatanmu:")
+
+class y:
+    yCount = 0
+    
+    def __init__(self, nama_y, nim_y, angkatan_y):
+        self.nama_y = nama_y
+        self.nim_y = nim_y
+        self.angkatan_y = angkatan_y
+        y.yCount += 1
+        
+    def printy(self):
+        print("Nama: " + self.nama_y + "\nNim: " + str(self.nim_y) + "\nAngkatan:" + str(self.angkatan_y)) 
+                
+mahasiswa = y(a, b, c)
+mahasiswa.printy()
+
+
+print("Jumlah Mahasiswa yang dimasukkan ke dalam objek adalah: ", y.yCount)
+
