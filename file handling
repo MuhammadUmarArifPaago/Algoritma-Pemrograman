@@ -1,0 +1,72 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec  2 05:58:56 2021
+
+@author: LENOVO
+"""
+
+"""
+@Judul: Latihan Kedua
+@Hari/Tanggal: minggu, 20211205
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+print("===== Program File Handling =====")
+print("1. Membuat dan Menulis File")
+print("2. Membaca File")
+print("3. Menambahkan Text Pada File")
+print("4. Keluar Dari Program\n")
+
+def write(data, y):
+   file = open(y, "w")
+   file.write(data)
+   file.close()
+   
+def read(y):
+   file = open(y, "r")
+   text = file.read()
+   print (text)
+   file.close()
+   
+def add(data, y):
+   file = open(y, "a")
+   file.write(data)
+   file.close()
+
+def program():
+    F = False
+    while(not F):
+        x = int(input("Masukkan Pilihan Berupa Angka (1/2/3/4): "))
+        if(x == 1):
+            File = input("Masukkan Nama File: ")
+            y = File + ".txt"
+            nama = input("Masukkan Namamu: ")
+            nim = input("Masukkan NIM kamu: ")
+            angkatan = input("Masukkan tahun angkatanmu: ")
+            text = "Nama: {}\nNIM: {}\nAngkatan: {}\n".format(nama,nim,angkatan)
+            write(text, y)
+            print("File Berhasil Dibuat")
+                        
+        elif(x == 2):
+            File = input("Masukkan Nama File: ")
+            y = File + ".txt"
+            read(y)
+            
+        elif(x == 3):
+            File = input("Masukkan Nama File: ")
+            y = File + ".txt"
+            teman = input("Masukkan Nama Sahabatmu: ")
+            catatan = input("Masukkan Catatan Tambahan kamu: ")
+            text = "Nama Sahabat: {}\nCatatan: {}\n".format(teman,catatan)
+            add(text, y)
+            print("Data Berhasil Ditambahkan")
+            
+        elif(x == 4):
+            print("Terima Kasih Sudah Menggunakan Program Saya")
+            F = True
+        else:
+            print("Masukkan Angka yang sesuai dengan yang ada di Menu!")
+
+program()
+   
