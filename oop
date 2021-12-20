@@ -1,0 +1,88 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 17 05:03:08 2021
+
+@author: LENOVO
+"""
+"""
+@Judul: Latihan kedua
+@Hari/Tanggal: Jumat, 20211217
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+def awal():
+ print("===== Program OOP =====")
+ print("1. Mendeklarasikan Objek")
+ print("2. Menampilkan Objek")
+ print("3. Merubah Nilai Objek")
+ print("4. Menghapus Objek")
+ print("5. Keluar Dari Program")
+
+class y:         
+    def __init__(self, nama_y, nilai_y):
+        self.nama_y = nama_y
+        self.nilai_y = nilai_y
+        
+@property
+def nilai_y(self):
+   return self.__nilai_y
+   
+@nilai_y.getter
+def nilai_y(self):
+   return self.__nilai_y
+
+@nilai_y.setter
+def nilai_y(self, input):
+    self.__nilai_y = input
+
+@nilai_y.deleter
+def nilai_y(self):
+    self.__nilai_y = None
+   
+   
+def main():
+    mahasiswa = y(None, None)
+    F = False
+    while(not F):
+       awal()
+       pilihan = int(input("Masukkan Pilihan Berupa Angka (1/2/3/4/5): "))
+       if(pilihan == 1):
+           nama_y = input("Masukkan Namamu: ")
+           nilai_y = int(input("Masukkan Nilaimu: "))
+           mahasiswa = y(nama_y, nilai_y)
+           print("Data Berhasil Ditambahkan")
+           print("\n")
+       elif(pilihan == 2):
+              print(mahasiswa.nama_y)
+              print(mahasiswa.nilai_y)
+              print("\n")
+       elif(pilihan == 3):
+           ubah = input("Apa yang ingin diubah (Nama/Nilai): ")
+           if(ubah == "Nama" or ubah == "nama"):
+              nama = input("Masukkan Nama: ")
+              mahasiswa.nama_y = nama
+              print("Data Nama Berhasil Dirubah")
+              print("\n")
+           elif(ubah == "Nilai" or ubah == "nilai"):
+              nilai = int(input("Masukkan Nilai: "))
+              mahasiswa.nilai_y = nilai
+              print("Data Nilai Berhasil Dirubah")
+              print("\n")
+           else:
+              print("Masukkan Opsi yang sesuai (Nama/Nilai)!")
+              print("\n")
+       elif(pilihan == 4):
+            mahasiswa.nama_y = None
+            del mahasiswa.nilai_y
+            print("Data Berhasil Dihapus")
+            print("\n")
+       elif(pilihan == 5):
+            print("Terima Kasih Sudah Menggunakan Program Ini")
+            print("\n")
+            F = True
+       else:
+            print("Masukkan Angka yang sesuai dengan yang ada di Menu!")
+            print("\n")
+
+main()
