@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec 23 22:47:34 2021
+
+@author: LENOVO
+"""
+"""
+@Judul: Latihan Pertama
+@Hari/Tanggal: Kamis, 20211223
+@NIM: 065002100031
+@Nama: Muhammad Umar Arif Paago
+"""
+
+import pandas as pd
+
+def pertama(data):
+   
+  file = open("Negara.csv","r")
+  file.close()
+  
+  
+data={"Negara":["Indonesia","Jepang","India","China","Amerika Serikat","Brazil",
+"Rusia","Meksiko","Nigeria","Jerman","Aljazair","Inggris"],
+    "Ibu Kota":["Jakarta","Tokyo","New Delhi","Beijing","Washington DC","Brazilia",
+"Moskow","Meksiko City","Abuja","Berlin","Aljazair","London"],
+    "Benua":["Asia","Asia","Asia","Asia","Amerika","Amerika","Asia","Amerika","Afrika",
+             "Eropa","Afrika","Eropa"],
+    "Luas":[1905,377,1252,1357,329,210,146,126,200,83,43,66],
+    "Populasi": [264,143,1252,1357,329,210,146,126,200,83,43,66]}
+
+df = pd.DataFrame(data)
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+print("Berikut Data Framenya:\n")
+print(df)
+print("\nBerikut Data Mean:")
+print(mean)
+print("\nBerikut Data Standar Devisiasi")
+print(std)
+pertama(str(mean))
+pertama(str(std))
+print("\nFile Berhasil dibuat")
+    
